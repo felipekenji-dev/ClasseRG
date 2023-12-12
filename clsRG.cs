@@ -61,9 +61,9 @@ public class RG
     }
 
     //Método que realiza os cálculos para gerar o Dígito Verificador
-    public string GerarDigitoVerificador(string digitos)
+    private string GerarDigitoVerificador(string digitos)
     {
-        //Calcular as Multiplicações de cada Dígito do CPF
+        //Calcular as Multiplicações de cada Dígito do RG
         int soma = 0;
         int multiplicador = 2;
         for (int indice = 0; indice < digitos.Length; indice++)
